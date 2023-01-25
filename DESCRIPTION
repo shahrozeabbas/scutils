@@ -3,9 +3,8 @@ Type: Package
 Title: Utility functions for Seurat and single-cell data
 Version: 0.1.0
 Author: Shahroze Abbas
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Maintainer: Shahroze Abbas 
+Description: Useful for performing different functions on Seurat objects for analyzing single-cell data.
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true

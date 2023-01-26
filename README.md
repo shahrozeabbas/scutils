@@ -7,7 +7,7 @@ Over the years, I've found useful packages for analyzing single-cell data. As a 
 R packages from CRAN that are required to run `scutils`
 
 ```
-install.packages(c('dplyr', 'Seurat', 'data.table', 'reticulate', 'SoupX', 'DUBStepR'))
+install.packages(c('dplyr', 'Seurat', 'data.table', 'reticulate', 'SoupX', 'DUBStepR', 'openxlsx', 'HGNChelper'))
 ```
 
 The `sceasy` package is required to run `scVI`

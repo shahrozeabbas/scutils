@@ -42,7 +42,7 @@ K-means clustering is a classic machine learning approach to group data into sim
 ## Correct for Ambient RNA contamination using SoupX
 Droplet-based Single-cell experiments often capture mRNA that is present in the assay solution and encapsulated along with a given cell. Before sequencing, these cells are lysed and 'cell-free' RNA is added to the mixture, contaminating the downstream expression counts. The `SoupX` method attempts to correct this problem and the `SoupCorrect` wrapper function included in this package helps to facilitate this process. Please read more about this awesome package [here](https://academic.oup.com/gigascience/article/9/12/giaa151/6049831).
 
-## Using the Coefficient of Variation Score to Assess Integration of Multiple Datasets
+## Using the Coefficient of Variation Score to Assess Integration of Datasets
 Batch effect is a major issue when combining multiple datasets in single-cell analyses. There are currently many packages for addressing this problem along with ways to assess how well the integration performed. *Lakkis et al.* created the [CarDEC](https://genome.cshlp.org/content/early/2021/05/25/gr.271874.120) method for this purpose. The authors also define a metric known as the *CV Score* to assess how well their method and others are able to correct for batch effect. This package implements the metric in an easy-to-use `CVScore` function that can be included in any single-cell analysis. 
 
 ## Integrate Data using scVI and Seurat

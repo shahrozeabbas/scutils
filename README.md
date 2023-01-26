@@ -1,4 +1,4 @@
-# scutils - Wrapper Functions for Analyzing Single-Cell Data with Seurat
+# Wrapper Functions for Analyzing Single-Cell Data with Seurat
 
 ### Package Overview
 Over the years, I've found useful packages for analyzing single-cell data. As a result, there are many different approaches to handle problems one might have when analyzing these data. The `Seurat` package has become a popular choice for researchers to perform end to end analysis. However, many tools may not be ready to accept `Seurat` objects out of the box. I designed this package to keep track of the different tools I have used and found useful, and to allow users to easily apply these tools to data stored in `Seurat` objects.      

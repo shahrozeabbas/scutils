@@ -18,10 +18,12 @@ Imports:
     Seurat,
     sceasy,
     methods,
+    openxlsx,
     DUBStepR,
     data.table,
     reticulate
 Suggests:
+    HGNChelper,
     BiocManager,
     LoomExperiment,
     SingleCellExperiment

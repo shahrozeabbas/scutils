@@ -27,7 +27,7 @@ devtools::install_github('shahrozeabbas/scutils')
 <br />
 <br />
 
-# Functions Currently Supported by `scutils`
+# Functions Currently Supported by scutils
 
 ## Removing Mitochondrial and Ribosomal Genes from Variable Feature List
 Many machine learning algorithms rely on a set of variable or informative features to create models. This becomes especially necessary for single-cell data which are sparse. Many genes do not provide enough information to be used for downstream clustering. `Seurat` calculates a set a variable features for this purpose, which can sometimes retain mitochondrial or ribosomal genes. Depending on what biological question is, this may inform downstream clustering in a negative way. The `CleanVarGenes` function can be used to remove these genes from the variable feature list. 

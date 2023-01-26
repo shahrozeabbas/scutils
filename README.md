@@ -3,14 +3,31 @@
 ### Package Overview
 Over the years, I've found useful packages for analyzing single-cell data. As a result, there are many different approaches to handle problems one might have when analyzing these data. The `Seurat` package has become a popular choice for researchers to perform end to end analysis. However, many tools may not be ready to accept `Seurat` objects out of the box. I designed this package to keep track of the different tools I have used and found useful, and to allow users to easily apply these tools to data stored in `Seurat` objects.      
 
+### Dependencies
+R packages from CRAN that are required to run `scutils`
+
+```
+install.packages(c('dplyr', 'Seurat', 'data.table', 'reticulate', 'SoupX', 'DUBStepR'))
+```
+
+The `sceasy` package is required to run `scVI`
+
+```
+devtools::install_github('cellgeni/sceasy')
+```
+
 
 ### Installation
 This package can be installed using the following code in R. Please note that some functions will require external dependencies to be downloaded and installed. 
 
-`devtools::install_github('shahrozeabbas/scutils')`
+```
+devtools::install_github('shahrozeabbas/scutils')
+```
 
 <br />
 <br />
+
+# Functions Currently Supported by `scutils`
 
 ## Removing Mitochondrial and Ribosomal Genes from Variable Feature List
 Many machine learning algorithms rely on a set of variable or informative features to create models. This becomes especially necessary for single-cell data which are sparse. Many genes do not provide enough information to be used for downstream clustering. `Seurat` calculates a set a variable features for this purpose, which can sometimes retain mitochondrial or ribosomal genes. Depending on what biological question is, this may inform downstream clustering in a negative way. The `CleanVarGenes` function can be used to remove these genes from the variable feature list. 

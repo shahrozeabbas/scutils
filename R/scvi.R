@@ -36,7 +36,7 @@ RunSCVI <- function(object.list, batch.key=NULL, features=2000, assay='RNA', mer
 
     # run setup_anndata, use column for batch if applicable
     if (is.character(vars.to.regress)) {
-        scvi$model$SCVI$setup_anndata(adata, batch_key=batch.key, continuous_covariate_keys=as.list(vars.to.regress))
+        scvi$model$SCVI$setup_anndata(adata, batch_key=list(batch.key), continuous_covariate_keys=list(vars.to.regress))
     } else {
         scvi$model$SCVI$setup_anndata(adata, batch_key=batch.key)
     }
